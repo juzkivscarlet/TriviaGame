@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Geography Trivia Game!</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper.js & Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>"></script>
+
+        <!-- Custom JS -->
+        <script src="assets/javascript/app.js"></script>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron" id="start">
+                <h1 class="display-4">Geography Trivia!</h1>
+                <p class="lead">Test your knowledge of the world with my 10 questions!</p>
+                <hr class="my-4">
+
+                <center>
+                    <p>Created by Matt Juskiw</p>
+                    <button type="button" class="btn btn-primary btn-lg" id="startbtn">Start!</button>
+                </center>
+            </div>
+
+            <div class="jumbotron" id="game">
+                <h1 class="display-4" id="question-head">   </h1>
+                <p class="lead">
+                    Correct: <span id="correct-answers"></span><br>
+                    Incorrect: <span id="wrong-answers"></span>
+                </p>
+                <hr class="my-4">
+
+                <div class="progress">
+                    <div id="countdown" class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <p class="text-center" id="question-text">Quesion Text?</p>
+                <div id="ansBtns">
+                    <button type="button" class="btn btn-md btn-outline-primary" id="btnA">1 &mdash; <span id="ansA">Answer A</span></button><br>
+                    <button type="button" class="btn btn-md btn-outline-primary" id="btnB">2 &mdash; <span id="ansB">Answer B</span></button><br>
+                    <button type="button" class="btn btn-md btn-outline-primary" id="btnC">3 &mdash; <span id="ansC">Answer C</span></button><br>
+                    <button type="button" class="btn btn-md btn-outline-danger" id="noAns"> I don't know &rarr; </button>
+                </div>
+
+            </div>
+
+            <div class="jumbotron" id="result">
+                <h1 class="display-4" id="question-head">Result</h1>
+                <p class="lead">
+                    Correct: <span id="result-right"></span><br>
+                    Incorrect: <span id="result-wrong"></span>
+                </p>
+                <hr class="my-4">
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
