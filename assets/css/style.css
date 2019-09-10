@@ -1,0 +1,32 @@
+html, body {
+    width: 100%;
+}
+
+body {
+    background-image: url("../images/niagarafalls-trees.JPG");
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.jumbotron {
+    position: fixed;
+    width: 50%;
+    top: 15%;
+    bottom: auto;
+    left: 25%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#result, #game {
+    position: fixed;
+    top: 15%;
+    bottom: auto;
+    left: 25%;
+    /* pointer-events: none; */
+}
+#game button {
+    margin-top: 6px;
+}
+#noAns {
+    float: right;
+}
